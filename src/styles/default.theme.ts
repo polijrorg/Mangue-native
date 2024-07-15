@@ -1,23 +1,18 @@
 export const theme = {
-  colors: {
-      primary: {
-          main: '#004C97',
-          light: '#378CDF',
-          dark: '#002549'
-      },
-
-      secundary: {
-          main: '#FCA925',
-          light: '#FFD797',
-          dark: '#CD7E00'
-      },
-
-      highEmphasis: '#1E2732',
-      mediumEmphasis: '#545454',
-      lowEmphasis: '#949494',
-
-      surface: '#FFFFFF',
-      divider: '#E6EAED',
-      background: '#FAFAFA'
-  }
-};
+    colors: {
+        primary: {
+            main: '#5746AF',
+            light: 'rgba(87, 70, 175, 0.7)',
+            dark: 'rgba(232, 232, 232, 0.7)'
+        },
+  
+        secundary: {
+            main: 'rgba(217, 217, 217, 1)',
+            light: 'rgba(0, 0, 0, 0.5)',
+            dark: 'rgba(0, 0, 0, 1)'
+        },
+  
+        white: '#FFFFFF',
+    }
+  };
+  
