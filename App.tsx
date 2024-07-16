@@ -3,8 +3,10 @@ import React, { useEffect } from 'react';
 import { useFonts } from 'expo-font';
 import * as SplashScreen from 'expo-splash-screen';
 import { AuthProvider } from '@hooks/useAuth';
+import Home from '@screens/Home';
 
 export default function App() {
+
   const [fontsLoaded] = useFonts({
     'Poppins-Thin': require('./public/assets/fonts/Poppins-Thin.ttf'),
     'Poppins-ExtraLight': require('./public/assets/fonts/Poppins-ExtraLight.ttf'),
@@ -20,4 +22,12 @@ export default function App() {
   });
 
   if (!fontsLoaded) return null;
+  
+  return (
+    <AppProvider>
+      <Home />
+    </AppProvider>
+  );
 }
+
+
