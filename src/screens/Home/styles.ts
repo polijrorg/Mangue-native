@@ -5,10 +5,16 @@ export const Wrapper = styled(View)`
   flex: 1;
   align-items: center;
   justify-content: center;
-  background: ${({ theme }) => theme.colors.primary.main };
+  background: ${({ theme }) => theme.colors.white };
 `;
 
 export const StyledText = styled(Text)`
   color: ${({ theme }) => theme.colors.highEmphasis};
   margin-top: 32px;
+`;
+
+export const LogoImg = styled.Image`
+  height: 60;
+  width: 60px;
+  background-color: red;
 `;
