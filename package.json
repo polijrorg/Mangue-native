@@ -10,20 +10,17 @@
     "postinstall": "husky install",
     "lint": "eslint src --max-warnings=0"
   },
-  
-"husky": {
-  "hooks": {
-    "pre-commit": "lint-staged"
-  }
-},
-
-"lint-staged": {
-  "*.js": [
-    "eslint --fix",
-    "git add"
-  ]
-},
-
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
   "keywords": [
     "react-native",
     "expo",
@@ -44,6 +41,8 @@
     "react-native": "0.72.3",
     "react-native-gesture-handler": "~2.12.0",
     "react-native-reanimated": "~3.3.0",
+    "react-native-svg": "^15.4.0",
+    "react-native-svg-transformer": "^1.5.0",
     "react-native-web": "~0.19.6",
     "styled-components": "^5.3.5"
   },
