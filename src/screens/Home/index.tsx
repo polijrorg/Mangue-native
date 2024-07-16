@@ -6,7 +6,7 @@ import React from 'react';
 
 const Home = () => (
   <S.Wrapper>
-      <S.LogoImg source={require('public/assets/notes.png')} />
+      <S.LogoImg source={require('public/assets/images/notes.png')} />
     <LoginScreen />
   </S.Wrapper>
 );

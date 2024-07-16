@@ -16,5 +16,4 @@ export const StyledText = styled(Text)`
 export const LogoImg = styled.Image`
   height: 60px;
   width: 60px;
-  background-color: red;
 `;
