@@ -3,13 +3,13 @@ import styled from 'styled-components/native';
 
 export const Container = styled.View`
   width: 95%;
-  background-color: green;
   justify-content: center;
   padding: 0 16px;
 `;
 
 export const StyledInput = styled.TextInput`
   font-family: 'Poppins-Regular';
+  font-size: 10px;
   height: 40px;
   background-color: ${theme.colors.primary.dark};
   border-radius: 15px;
@@ -19,8 +19,9 @@ export const StyledInput = styled.TextInput`
 `;
 
 export const StyledLabel = styled.Text`
-  margin-bottom: 4px;
+  /* margin-bottom: 2px; */
   font-family: 'Poppins-Regular';
+  font-size: 10px;
 `;
 
 export const StyledButton = styled.TouchableOpacity`
