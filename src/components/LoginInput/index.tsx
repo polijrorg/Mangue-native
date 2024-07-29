@@ -22,7 +22,7 @@ const LoginComponent = () => {
       />
       <S.StyledLabel>Senha</S.StyledLabel>
       <S.StyledInput
-        placeholder="123456789"
+        placeholder="********"
         value={password}
         onChangeText={setPassword}
         secureTextEntry
