@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { View, TextInput, Button, Text } from 'react-native';
 import * as S from './styles'; // Importa os estilos do arquivo styles.js
 
-const LoginScreen = () => {
+const LoginComponent = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
@@ -34,4 +34,4 @@ const LoginScreen = () => {
   );
 };
 
-export default LoginScreen;
+export default LoginComponent;
