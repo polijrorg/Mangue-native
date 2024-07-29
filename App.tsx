@@ -4,6 +4,8 @@ import { useFonts } from 'expo-font';
 import * as SplashScreen from 'expo-splash-screen';
 import { AuthProvider } from '@hooks/useAuth';
 import Home from '@screens/Home';
+import { NavigationContainer } from '@react-navigation/native';
+import Routes from '@routes/index';
 
 export default function App() {
 
@@ -24,9 +26,11 @@ export default function App() {
   if (!fontsLoaded) return null;
   
   return (
-    <AppProvider>
-      <Home />
-    </AppProvider>
+    <NavigationContainer>
+      <AppProvider>
+        <Routes />
+      </AppProvider>
+    </NavigationContainer>
   );
 }
 
