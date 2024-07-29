@@ -3,6 +3,7 @@ import { createNativeStackNavigator} from '@react-navigation/native-stack'
 import Home from '@screens/Home';
 import SingnUp from '@screens/SignUp'
 import RoleSelectionScreen from "@screens/RoleSelection";
+import AgeSelectionScreen from "@screens/AgeSelection";
 
 const AppStack = createNativeStackNavigator();
 
@@ -16,6 +17,9 @@ const AppRoutes: React.FC = () => (
         options={{header: () => <></>}} />
         <AppStack.Screen name = 'RoleSelection'
         component={RoleSelectionScreen}
+        options={{header: () => <></>}} />
+        <AppStack.Screen name = 'AgeSelection'
+        component={AgeSelectionScreen}
         options={{header: () => <></>}} />
     </AppStack.Navigator>
 )

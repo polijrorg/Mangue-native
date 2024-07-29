@@ -25,7 +25,7 @@ const Home = ({navigation}) => {
     </S.ForgotWrapper>
     <S.SignUpWrapper>
       <S.SignUpText>Não tem uma conta? </S.SignUpText>
-      <S.ForgotText onPress={() => navigation.navigate('SignUp')} >Cadastre-se</S.ForgotText>
+      <S.SignUpText2 onPress={() => navigation.navigate('SignUp')} >Cadastre-se</S.SignUpText2>
     </S.SignUpWrapper>
   </S.Wrapper>
 )};

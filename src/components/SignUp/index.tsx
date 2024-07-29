@@ -33,13 +33,13 @@ const SignUpComponent = ({navigation}) => {
         placeholder="exemplo@gmail.com"
         value={email}
         onChangeText={setEmail}
-        secureTextEntry
       />
       <S.StyledLabel>Senha</S.StyledLabel>
       <S.StyledInput
         placeholder="**********"
         value={password}
         onChangeText={setPassword}
+        secureTextEntry
       />
     <S.ThermsWrapper>
       <Checkbox label="Concordo com os Termos do App e Política de privacidade" checked={isChecked} onPress={handleCheckboxToggle} />

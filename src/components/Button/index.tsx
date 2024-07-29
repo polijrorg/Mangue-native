@@ -2,9 +2,9 @@ import React from 'react';
 import { TouchableOpacity } from 'react-native';
 import * as S from './styles';
 
-const Button = ({ Title }) => {
+const Button = ({ Title, onPress }) => {
   return (
-    <S.StyledButton>
+    <S.StyledButton onPress={onPress}>
         <S.ButtonText>{Title}</S.ButtonText>
     </S.StyledButton>
   );

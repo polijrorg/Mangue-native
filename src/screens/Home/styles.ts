@@ -12,7 +12,7 @@ export const Wrapper = styled(View)`
 export const ForgotWrapper = styled(View)`
   padding: 0px 30px;
   margin-top: 15px;
-  margin-bottom: 230px;
+  margin-bottom: 220px;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -60,6 +60,13 @@ export const ForgotText = styled(Text)`
 
 export const SignUpText = styled(Text)`
   color: ${theme.colors.secundary.dark};
-  font-size: 10px;
+  font-size: 12px;
   font-family: 'Poppins';
-`;
+  `;
+
+  export const SignUpText2 = styled(Text)`
+    color: ${theme.colors.primary.light};
+    font-size: 12px;
+    font-family: 'Poppins-Bold';
+    text-decoration-line: underline;
+  `;
