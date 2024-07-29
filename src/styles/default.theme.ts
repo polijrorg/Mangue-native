@@ -3,7 +3,8 @@ export const theme = {
         primary: {
             main: '#5746AF',
             light: 'rgba(87, 70, 175, 0.7)',
-            dark: 'rgba(232, 232, 232, 0.7)'
+            dark: 'rgba(232, 232, 232, 0.7)',
+            dark2: 'rgba(0, 0, 0, 0.5)'
         },
   
         secundary: {
@@ -13,6 +14,7 @@ export const theme = {
         },
   
         white: '#FFFFFF',
+        highEmphasis: '#000000' // Ajuste esta cor conforme necessário
     }
   };
   
