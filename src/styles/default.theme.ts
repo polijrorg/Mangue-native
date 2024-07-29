@@ -14,6 +14,7 @@ export const theme = {
         },
   
         white: '#FFFFFF',
+        black: 'rgba(0, 0, 0, 1)',
         highEmphasis: '#000000' // Ajuste esta cor conforme necessário
     }
   };

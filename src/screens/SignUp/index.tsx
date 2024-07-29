@@ -6,7 +6,7 @@ import { StatusBar } from 'expo-status-bar';
 import React, { useState } from 'react';
 import SignUpComponent from '@components/SignUp';
 
-const SignUp = () => {
+const SignUp = ({navigation}) => {
   const [isChecked, setIsChecked] = useState(false);
 
   const handleCheckboxToggle = () => {
@@ -18,7 +18,7 @@ const SignUp = () => {
   <S.Wrapper>
     <S.TitleTxt>Criar Conta</S.TitleTxt>
     <S.SubtitleTxt>Preencha as informações abaixo para poder acessar as informações de nosso aplicativo</S.SubtitleTxt>
-    <SignUpComponent />
+    <SignUpComponent navigation={navigation}/>
 
   </S.Wrapper>
 )};
