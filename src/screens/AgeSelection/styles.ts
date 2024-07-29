@@ -9,10 +9,10 @@ export const Wrapper = styled(View)`
   background: ${({ theme }) => theme.colors.white };
 `;
 
-export const ForgotWrapper = styled(View)`
+export const ThermsWrapper = styled(View)`
   padding: 0px 30px;
   margin-top: 15px;
-  margin-bottom: 220px;
+  margin-bottom: 230px;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -33,8 +33,10 @@ export const StyledText = styled(Text)`
 export const TitleTxt = styled(Text)`
   color: ${({ theme }) => theme.colors.highEmphasis};
   font-family: Poppins;
-  font-size: 30px;
-  margin-bottom: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 45%;
+  margin-bottom: 15px;
 `;
 
 export const SubtitleTxt = styled(Text)`
@@ -42,6 +44,8 @@ export const SubtitleTxt = styled(Text)`
   font-size: 10px;
   margin-bottom: 60px;
   font-family: 'Poppins';
+  text-align: center;
+  padding: 0px 30px;
 `;
 
 export const LogoImg = styled.Image`
@@ -60,13 +64,6 @@ export const ForgotText = styled(Text)`
 
 export const SignUpText = styled(Text)`
   color: ${theme.colors.secundary.dark};
-  font-size: 12px;
+  font-size: 10px;
   font-family: 'Poppins';
-  `;
-
-  export const SignUpText2 = styled(Text)`
-    color: ${theme.colors.primary.light};
-    font-size: 12px;
-    font-family: 'Poppins-Bold';
-    text-decoration-line: underline;
-  `;
+`;
