@@ -20,6 +20,6 @@ export const CheckboxSquare = styled(View)`
 
 export const CheckboxLabel = styled(Text)`
   color: ${({ theme }) => theme.colors.highEmphasis};
-  font-size: 10px;
+  font-size: 12px;
   font-family: 'Poppins';
 `;

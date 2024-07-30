@@ -41,7 +41,7 @@ export const TitleTxt = styled(Text)`
 
 export const SubtitleTxt = styled(Text)`
   color: ${theme.colors.primary.dark2};
-  font-size: 10px;
+  font-size: 12px;
   margin-bottom: 60px;
   font-family: 'Poppins';
   text-align: center;

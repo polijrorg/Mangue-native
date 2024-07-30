@@ -39,7 +39,7 @@ export const TitleTxt = styled(Text)`
 
 export const SubtitleTxt = styled(Text)`
   color: ${theme.colors.primary.dark2};
-  font-size: 10px;
+  font-size: 12px;
   margin-bottom: 60px;
   font-family: 'Poppins';
   text-align: center;
@@ -55,13 +55,13 @@ export const LogoImg = styled.Image`
 
 export const ForgotText = styled(Text)`
   color: ${theme.colors.primary.light};
-  font-size: 10px;
+  font-size: 12px;
   font-family: 'Poppins-Bold';
   text-decoration-line: underline;
 `;
 
 export const SignUpText = styled(Text)`
   color: ${theme.colors.secundary.dark};
-  font-size: 10px;
+  font-size: 12px;
   font-family: 'Poppins';
 `;

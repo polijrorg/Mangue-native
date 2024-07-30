@@ -39,7 +39,7 @@ export const TitleTxt = styled(Text)`
 
 export const SubtitleTxt = styled(Text)`
   color: ${theme.colors.primary.dark2};
-  font-size: 10px;
+  font-size: 12px;
   margin-bottom: 60px;
   font-family: 'Poppins';
 `;
@@ -53,7 +53,7 @@ export const LogoImg = styled.Image`
 
 export const ForgotText = styled(Text)`
   color: ${theme.colors.primary.light};
-  font-size: 10px;
+  font-size: 12px;
   font-family: 'Poppins-Bold';
   text-decoration-line: underline;
 `;

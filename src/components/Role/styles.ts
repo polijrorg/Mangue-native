@@ -18,7 +18,7 @@ export const Title = styled(Text)`
 `;
 
 export const Description = styled(Text)`
-  font-size: 10px;
+  font-size: 11px;
   color: ${({ selected, theme }) => (selected ? theme.colors.white : theme.colors.black)};
   text-align: center;
   margin-top: 10px;
