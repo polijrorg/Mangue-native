@@ -33,15 +33,14 @@ export const StyledText = styled(Text)`
 export const TitleTxt = styled(Text)`
   color: ${({ theme }) => theme.colors.highEmphasis};
   font-family: Poppins;
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 30px;
   margin-top: 45%;
   margin-bottom: 15px;
 `;
 
 export const SubtitleTxt = styled(Text)`
   color: ${theme.colors.primary.dark2};
-  font-size: 12px;
+  font-size: 10px;
   margin-bottom: 60px;
   font-family: 'Poppins';
   text-align: center;
@@ -66,4 +65,26 @@ export const SignUpText = styled(Text)`
   color: ${theme.colors.secundary.dark};
   font-size: 10px;
   font-family: 'Poppins';
+`;
+
+export const StyledInput = styled.TextInput`
+  font-family: 'Poppins-Regular';
+  width: 90%;
+  font-size: 10px;
+  height: 40px;
+  background-color: ${theme.colors.primary.dark};
+  border-radius: 15px;
+  padding: 0 8px;
+`;
+
+export const StyledLabel = styled.Text`
+  /* margin-bottom: 2px; */
+  font-family: 'Poppins-Regular';
+  font-size: 10px;
+`;
+
+export const Container = styled.View`
+  width: 95%;
+  justify-content: center;
+  padding: 0 16px;
 `;

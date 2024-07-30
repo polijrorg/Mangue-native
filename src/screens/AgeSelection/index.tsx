@@ -1,10 +1,5 @@
-import Checkbox from '@components/CheckBox';
 import * as S from './styles';
-import Heading from '@components/Heading';
-import LoginScreen from '@components/LoginInput';
-import { StatusBar } from 'expo-status-bar';
 import React, { useState } from 'react';
-import SignUpComponent from '@components/SignUp';
 import AgeSelector from '@components/AgeSelector';
 import ProgressBar from '@components/ProgressBar';
 import Button from '@components/Button';

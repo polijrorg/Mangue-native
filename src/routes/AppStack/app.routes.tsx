@@ -4,6 +4,8 @@ import Home from '@screens/Home';
 import SingnUp from '@screens/SignUp'
 import RoleSelectionScreen from "@screens/RoleSelection";
 import AgeSelectionScreen from "@screens/AgeSelection";
+import ForgotPasswordScreen from "@screens/ForgotPassword";
+import ForgotTokenScreen from "@screens/ForgotToken";
 
 const AppStack = createNativeStackNavigator();
 
@@ -20,6 +22,12 @@ const AppRoutes: React.FC = () => (
         options={{header: () => <></>}} />
         <AppStack.Screen name = 'AgeSelection'
         component={AgeSelectionScreen}
+        options={{header: () => <></>}} />
+        <AppStack.Screen name = 'ForgotPassword'
+        component={ForgotPasswordScreen}
+        options={{header: () => <></>}} />
+        <AppStack.Screen name = 'ForgotToken'
+        component={ForgotTokenScreen}
         options={{header: () => <></>}} />
     </AppStack.Navigator>
 )

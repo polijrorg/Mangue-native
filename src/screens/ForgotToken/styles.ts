@@ -33,8 +33,7 @@ export const StyledText = styled(Text)`
 export const TitleTxt = styled(Text)`
   color: ${({ theme }) => theme.colors.highEmphasis};
   font-family: Poppins;
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 30px;
   margin-top: 45%;
   margin-bottom: 15px;
 `;
@@ -42,7 +41,15 @@ export const TitleTxt = styled(Text)`
 export const SubtitleTxt = styled(Text)`
   color: ${theme.colors.primary.dark2};
   font-size: 12px;
-  margin-bottom: 60px;
+  font-family: 'Poppins';
+  text-align: center;
+  padding: 0px 30px;
+`;
+
+export const SubtitleTxt2 = styled(Text)`
+  color: ${theme.colors.primary.light};
+  font-size: 12px;
+  margin-bottom: 4px;
   font-family: 'Poppins';
   text-align: center;
   padding: 0px 30px;
@@ -66,4 +73,28 @@ export const SignUpText = styled(Text)`
   color: ${theme.colors.secundary.dark};
   font-size: 10px;
   font-family: 'Poppins';
+`;
+
+export const StyledInput = styled.TextInput`
+  font-family: 'Poppins-Regular';
+  font-size: 10px;
+  height: 40px;
+  background-color: ${theme.colors.primary.dark};
+  border-radius: 15px;
+  margin-top: 4px;
+  margin-bottom: 15px;
+  padding: 0 8px;
+`;
+
+export const StyledLabel = styled.Text`
+  /* margin-bottom: 2px; */
+  font-family: 'Poppins-Regular';
+  font-size: 10px;
+`;
+
+export const SignUpText2 = styled(Text)`
+color: ${theme.colors.primary.light};
+text-decoration-line: underline;
+font-size: 12px;
+font-family: 'Poppins-Bold';
 `;
