@@ -21,7 +21,7 @@ const Home = ({navigation}) => {
     <LoginComponent />
     <S.ForgotWrapper>
       <Checkbox label="Manter-se conectado" checked={isChecked} onPress={handleCheckboxToggle} />
-      <S.ForgotText>Esqueceu a Senha?</S.ForgotText>
+      <S.ForgotText onPress={() => navigation.navigate('ForgotPassword')}>Esqueceu a Senha?</S.ForgotText>
     </S.ForgotWrapper>
     <S.SignUpWrapper>
       <S.SignUpText>Não tem uma conta? </S.SignUpText>
