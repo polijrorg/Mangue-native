@@ -1,12 +1,10 @@
 import * as S from './styles';
-import React, { useState } from 'react';
+import React from 'react';
 import ProgressBar from '@components/ProgressBar';
 import Button from '@components/Button';
 import Input from '@components/Input';
 
 const MediaVeriScreen = ({navigation}) => {
-
-  const [username, setUsername] = useState('');
 
   const handleNextPress = () => {
     navigation.navigate('MusicGenreSelection')
