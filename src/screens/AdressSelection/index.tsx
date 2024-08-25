@@ -1,10 +1,10 @@
 import * as S from './styles';
 import React, { useState } from 'react';
-import AgeSelector from '@components/AgeSelector';
 import ProgressBar from '@components/ProgressBar';
 import Button from '@components/Button';
+import AdressComponent from '@components/AdressComponent';
 
-const AgeSelectionScreen = ({navigation}) => {
+const AdressSelectionScreen = ({navigation}) => {
   const [isChecked, setIsChecked] = useState(false);
 
   const handleCheckboxToggle = () => {
@@ -23,13 +23,13 @@ const AgeSelectionScreen = ({navigation}) => {
 
   <S.Wrapper>
     <ProgressBar 
-    currentPage={2} 
+    currentPage={3} 
     totalPages={5} 
     onBackPress={handleBackPress} />
-    <S.TitleTxt>Qual é a sua idade?</S.TitleTxt>
-    <S.SubtitleTxt>Para uma melhor experiência com o app, por favor
-       nos conte um pouco mais sobre você, agora pela sua idade!</S.SubtitleTxt>
-    <AgeSelector />
+    <S.TitleTxt>Qual é o seu endereço?</S.TitleTxt>
+    <S.SubtitleTxt>Para uma melhor experiência com o app, por favor nos conte um 
+      pouco mais sobre você, seu endereço é essencial para te conhecermos melhor!</S.SubtitleTxt>
+    <AdressComponent />
     <Button 
     Title={'Próximo'} 
     onPress={handleNextPress} />
@@ -37,4 +37,4 @@ const AgeSelectionScreen = ({navigation}) => {
   </S.Wrapper>
 )};
 
-export default AgeSelectionScreen;
+export default AdressSelectionScreen;
