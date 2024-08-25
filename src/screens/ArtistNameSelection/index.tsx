@@ -10,7 +10,7 @@ const ArtistNameSelectionScreen = ({navigation}) => {
   const[username, setUsername] = useState('');
 
   const handleNextPress = () => {
-    navigation.navigate('ArtistNameSelection')
+    navigation.navigate('LogoCreation')
   }
 
   const handleBackPress = () => {
