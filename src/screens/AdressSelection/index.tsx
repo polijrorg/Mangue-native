@@ -24,7 +24,7 @@ const AdressSelectionScreen = ({navigation}) => {
   <S.Wrapper>
     <ProgressBar 
     currentPage={3} 
-    totalPages={5} 
+    totalPages={8} 
     onBackPress={handleBackPress} />
     <S.TitleTxt>Qual é o seu endereço?</S.TitleTxt>
     <S.SubtitleTxt>Para uma melhor experiência com o app, por favor nos conte um 
