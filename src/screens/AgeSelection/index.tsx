@@ -12,7 +12,7 @@ const AgeSelectionScreen = ({navigation}) => {
   };
 
   const handleNextPress = () => {
-    navigation.navigate('NextPage')
+    navigation.navigate('AdressSelection')
   }
 
   const handleBackPress = () => {
