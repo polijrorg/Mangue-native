@@ -12,7 +12,7 @@ const AdressSelectionScreen = ({navigation}) => {
   };
 
   const handleNextPress = () => {
-    navigation.navigate('AdressSelection')
+    navigation.navigate('ArtistNameSelection')
   }
 
   const handleBackPress = () => {

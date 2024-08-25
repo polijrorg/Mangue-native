@@ -7,6 +7,7 @@ import AgeSelectionScreen from "@screens/AgeSelection";
 import ForgotPasswordScreen from "@screens/ForgotPassword";
 import ForgotTokenScreen from "@screens/ForgotToken";
 import AdressSelectionScreen from "@screens/AdressSelection";
+import ArtistNameSelectionScreen from "@screens/ArtistNameSelection";
 
 const AppStack = createNativeStackNavigator();
 
@@ -26,6 +27,9 @@ const AppRoutes: React.FC = () => (
         options={{header: () => <></>}} />
         <AppStack.Screen name = 'AdressSelection'
         component={AdressSelectionScreen}
+        options={{header: () => <></>}} />        
+        <AppStack.Screen name = 'ArtistNameSelection'
+        component={ArtistNameSelectionScreen}
         options={{header: () => <></>}} />
         <AppStack.Screen name = 'ForgotPassword'
         component={ForgotPasswordScreen}
