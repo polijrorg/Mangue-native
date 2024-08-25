@@ -24,7 +24,7 @@ const AgeSelectionScreen = ({navigation}) => {
   <S.Wrapper>
     <ProgressBar 
     currentPage={2} 
-    totalPages={5} 
+    totalPages={8} 
     onBackPress={handleBackPress} />
     <S.TitleTxt>Qual é a sua idade?</S.TitleTxt>
     <S.SubtitleTxt>Para uma melhor experiência com o app, por favor

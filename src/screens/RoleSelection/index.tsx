@@ -7,7 +7,7 @@ import ProgressBar from '@components/ProgressBar';
 const RoleSelectionScreen = ({ navigation }) => {
   const [selectedRole, setSelectedRole] = useState(null);
   const [currentPage, setCurrentPage] = useState(1);
-  const totalPages = 5;
+  const totalPages = 8;
 
   const handlePress = (role) => {
     setSelectedRole(role);

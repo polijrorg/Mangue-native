@@ -7,6 +7,11 @@ import AgeSelectionScreen from "@screens/AgeSelection";
 import ForgotPasswordScreen from "@screens/ForgotPassword";
 import ForgotTokenScreen from "@screens/ForgotToken";
 import AdressSelectionScreen from "@screens/AdressSelection";
+import ArtistNameSelectionScreen from "@screens/ArtistNameSelection";
+import LogoCreationScreen from "@screens/LogoCreationScreen";
+import MediaVeriScreen from "@screens/MediaVeriScreen";
+import MusicGenreSelection from "@screens/MusicGenreSelection";
+import VisualIdentitySelection from "@screens/VisualIdentitySelection";
 
 const AppStack = createNativeStackNavigator();
 
@@ -26,6 +31,21 @@ const AppRoutes: React.FC = () => (
         options={{header: () => <></>}} />
         <AppStack.Screen name = 'AdressSelection'
         component={AdressSelectionScreen}
+        options={{header: () => <></>}} />        
+        <AppStack.Screen name = 'ArtistNameSelection'
+        component={ArtistNameSelectionScreen}
+        options={{header: () => <></>}} />
+        <AppStack.Screen name = 'LogoCreation'
+        component={LogoCreationScreen}
+        options={{header: () => <></>}} />
+        <AppStack.Screen name = 'MediaVeriScreen'
+        component={MediaVeriScreen}
+        options={{header: () => <></>}} />
+        <AppStack.Screen name = 'MusicGenreSelection'
+        component={MusicGenreSelection}
+        options={{header: () => <></>}} />
+        <AppStack.Screen name = 'VisualIdentitySelection'
+        component={VisualIdentitySelection}
         options={{header: () => <></>}} />
         <AppStack.Screen name = 'ForgotPassword'
         component={ForgotPasswordScreen}
