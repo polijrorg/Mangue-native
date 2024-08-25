@@ -26,7 +26,7 @@ const AdressSelectionScreen = ({navigation}) => {
     currentPage={3} 
     totalPages={5} 
     onBackPress={handleBackPress} />
-    <S.TitleTxt>Qual é a sua idade?</S.TitleTxt>
+    <S.TitleTxt>Qual é o seu endereço?</S.TitleTxt>
     <S.SubtitleTxt>Para uma melhor experiência com o app, por favor nos conte um 
       pouco mais sobre você, seu endereço é essencial para te conhecermos melhor!</S.SubtitleTxt>
     <AdressComponent />
