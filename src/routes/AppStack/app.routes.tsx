@@ -9,6 +9,7 @@ import ForgotTokenScreen from "@screens/ForgotToken";
 import AdressSelectionScreen from "@screens/AdressSelection";
 import ArtistNameSelectionScreen from "@screens/ArtistNameSelection";
 import LogoCreationScreen from "@screens/LogoCreationScreen";
+import MediaVeriScreen from "@screens/MediaVeriScreen";
 
 const AppStack = createNativeStackNavigator();
 
@@ -34,6 +35,9 @@ const AppRoutes: React.FC = () => (
         options={{header: () => <></>}} />
         <AppStack.Screen name = 'LogoCreation'
         component={LogoCreationScreen}
+        options={{header: () => <></>}} />
+        <AppStack.Screen name = 'MediaVeriScreen'
+        component={MediaVeriScreen}
         options={{header: () => <></>}} />
         <AppStack.Screen name = 'ForgotPassword'
         component={ForgotPasswordScreen}

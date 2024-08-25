@@ -28,7 +28,7 @@ const LogoCreationScreen = ({ navigation }) => {
   };
 
   const handleNextPress = () => {
-    navigation.navigate('ArtistNameSelection');
+    navigation.navigate('MediaVeriScreen');
   };
 
   const handleBackPress = () => {
