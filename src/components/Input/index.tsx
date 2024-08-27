@@ -1,23 +1,21 @@
-import React, { useState } from 'react';
-import { View, TextInput, Button, Text } from 'react-native';
+import React from 'react';
 import * as S from './styles'; // Importa os estilos do arquivo styles.js
 
 interface InputProps {
   label: string;
   placeholder: string;
   value: string;
+  onChangeText: (text: string) => void;
 }
 
-const InputComponent = ({ label, placeholder, value }: InputProps) => {
-  const [username, setUsername] = useState('');
-
+const InputComponent: React.FC<InputProps> = ({ label, placeholder, value, onChangeText }) => {
   return (
     <S.Container>
       <S.StyledLabel>{label}</S.StyledLabel>
       <S.StyledInput
         placeholder={placeholder}
-        value={username}
-        onChangeText={setUsername}
+        value={value}
+        onChangeText={onChangeText}
       />
     </S.Container>
   );

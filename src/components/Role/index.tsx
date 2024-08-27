@@ -1,9 +1,14 @@
-import React, { useState } from 'react';
-import { TouchableOpacity  } from 'react-native';
-import * as S from './styles'; // Importa os estilos do arquivo styles.js
-import { useNavigation } from '@react-navigation/native';
+import React from 'react';
+import * as S from './styles';
 
-const RoleSelection = ({title, description, selected, onPress}) => { 
+interface RoleSelectionProps {
+  title: string;
+  description: string;
+  selected: boolean;
+  onPress: () => void;
+}
+
+const RoleSelection: React.FC<RoleSelectionProps> = ({ title, description, selected, onPress }) => {
   return (
     <S.Card selected={selected} onPress={onPress}>
       <S.Title selected={selected}>{title}</S.Title>

@@ -1,33 +1,33 @@
-import React, { useState } from 'react';
+import React from 'react';
 import * as S from './styles';
+import { RegisterRequest } from '@services/RegisterService';
 
-const SignUpComponent = () => {
-  const [isChecked, setIsChecked] = useState(false);
+interface AdressComponentProps {
+  formData: RegisterRequest;
+  setFormData: React.Dispatch<React.SetStateAction<RegisterRequest>>;
+}
 
-
-  const handleCheckboxToggle = () => {
-    setIsChecked(!isChecked);
+const AdressComponent: React.FC<AdressComponentProps> = ({ formData, setFormData }) => {
+  const handleInputChange = (field: keyof RegisterRequest, value: string) => {
+    setFormData({ ...formData, [field]: value });
   };
-
-  const [state, setState] = useState('');
-  const [city, setCity] = useState('');
 
   return (
     <S.Container>
       <S.StyledLabel>Estado</S.StyledLabel>
       <S.StyledInput
         placeholder="Preencha seu estado"
-        value={state}
-        onChangeText={setState}
+        value={formData.estado}
+        onChangeText={(text) => handleInputChange('estado', text)}
       />
       <S.StyledLabel>Cidade</S.StyledLabel>
       <S.StyledInput
         placeholder="Preencha sua cidade"
-        value={city}
-        onChangeText={setCity}
+        value={formData.cidade}
+        onChangeText={(text) => handleInputChange('cidade', text)}
       />
     </S.Container>
   );
 };
 
-export default SignUpComponent;
+export default AdressComponent;

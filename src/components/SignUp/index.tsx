@@ -1,23 +1,33 @@
 import React, { useState } from 'react';
-import { View, TextInput, Button, Text } from 'react-native';
-import * as S from './styles'; // Importa os estilos do arquivo styles.js
+import { Alert } from 'react-native';
+import * as S from './styles';
 import Checkbox from '@components/CheckBox';
-import { useNavigation } from '@react-navigation/native';
+import { RegisterRequest } from '@services/RegisterService';
 
-const SignUpComponent = ({navigation}) => {
-  const [isChecked, setIsChecked] = useState(false);
+interface SignUpComponentProps {
+  formData: RegisterRequest;
+  setFormData: React.Dispatch<React.SetStateAction<RegisterRequest>>;
+  navigation: any;
+}
 
+const SignUpComponent: React.FC<SignUpComponentProps> = ({
+  formData,
+  setFormData,
+  navigation,
+}) => {
+  const [agreedToTerms, setAgreedToTerms] = useState(false);
 
-  const handleCheckboxToggle = () => {
-    setIsChecked(!isChecked);
+  const handleInputChange = (field: keyof RegisterRequest, value: string) => {
+    setFormData({ ...formData, [field]: value });
   };
 
-  const [username, setUsername] = useState('');
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const handleNextPress = () => {
+    if (!agreedToTerms) {
+      Alert.alert('Aviso', 'É necessário concordar com os Termos de Uso para prosseguir.');
+      return;
+    }
 
-  const handleLogin = () => {
-    //testando funcionalidade do botão
+    navigation.navigate('RoleSelection');
   };
 
   return (
@@ -25,26 +35,30 @@ const SignUpComponent = ({navigation}) => {
       <S.StyledLabel>Nome Completo</S.StyledLabel>
       <S.StyledInput
         placeholder="Nome e Sobrenome"
-        value={username}
-        onChangeText={setUsername}
+        value={formData.name}
+        onChangeText={(text) => handleInputChange('name', text)}
       />
       <S.StyledLabel>Email</S.StyledLabel>
       <S.StyledInput
         placeholder="exemplo@gmail.com"
-        value={email}
-        onChangeText={setEmail}
+        value={formData.email}
+        onChangeText={(text) => handleInputChange('email', text)}
       />
       <S.StyledLabel>Senha</S.StyledLabel>
       <S.StyledInput
         placeholder="**********"
-        value={password}
-        onChangeText={setPassword}
+        value={formData.password}
+        onChangeText={(text) => handleInputChange('password', text)}
         secureTextEntry
       />
-    <S.ThermsWrapper>
-      <Checkbox label="Concordo com os Termos do App e Política de privacidade" checked={isChecked} onPress={handleCheckboxToggle} />
-    </S.ThermsWrapper>
-      <S.StyledButton onPress={() => navigation.navigate('RoleSelection')}>
+      <S.ThermsWrapper>
+        <Checkbox
+          label="Concordo com os Termos do App e Política de privacidade"
+          checked={agreedToTerms}
+          onPress={() => setAgreedToTerms(!agreedToTerms)}
+        />
+      </S.ThermsWrapper>
+      <S.StyledButton onPress={handleNextPress}>
         <S.ButtonText>Registrar-se</S.ButtonText>
       </S.StyledButton>
     </S.Container>
