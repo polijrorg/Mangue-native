@@ -1,26 +1,28 @@
-import Checkbox from '@components/CheckBox';
 import * as S from './styles';
-import Heading from '@components/Heading';
-import LoginScreen from '@components/LoginInput';
-import { StatusBar } from 'expo-status-bar';
 import React, { useState } from 'react';
 import SignUpComponent from '@components/SignUp';
+import { RegisterRequest } from '@services/RegisterService';
 
-const SignUp = ({navigation}) => {
-  const [isChecked, setIsChecked] = useState(false);
+interface SignUpProps {
+  formData: RegisterRequest;
+  setFormData: React.Dispatch<React.SetStateAction<RegisterRequest>>;
+  navigation: any;
+}
 
-  const handleCheckboxToggle = () => {
-    setIsChecked(!isChecked);
-  };
-
+const SignUp: React.FC<SignUpProps> = ({ formData, setFormData, navigation }) => {
   return (
-
-  <S.Wrapper>
-    <S.TitleTxt>Criar Conta</S.TitleTxt>
-    <S.SubtitleTxt>Preencha as informações abaixo para poder acessar as informações de nosso aplicativo</S.SubtitleTxt>
-    <SignUpComponent navigation={navigation}/>
-
-  </S.Wrapper>
-)};
+    <S.Wrapper>
+      <S.TitleTxt>Criar Conta</S.TitleTxt>
+      <S.SubtitleTxt>
+        Preencha as informações abaixo para poder acessar as informações do nosso aplicativo
+      </S.SubtitleTxt>
+      <SignUpComponent
+        formData={formData}
+        setFormData={setFormData}
+        navigation={navigation}
+      />
+    </S.Wrapper>
+  );
+};
 
 export default SignUp;
